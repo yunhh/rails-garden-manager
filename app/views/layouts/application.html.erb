@@ -9,16 +9,6 @@
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= favicon_link_tag asset_path('logo.png') %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
-  </head>
-  <body>
-    <%= render "shared/navbar" %>
-    <div class="content">
-      <%= yield %>
-    </div>
-    <%= render "shared/footer" %>
-    <!-- WARNING: DO NOT DELETE THE LINE BELOW -->
-    <div id="rails-garden-manager-watermark"></div>
-
     <!-- Hotjar Tracking Code for https://lit-wildwood-26854.herokuapp.com/ -->
     <script>
         (function(h,o,t,j,a,r){
@@ -30,6 +20,16 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+  </head>
+  <body>
+    <%= render "shared/navbar" %>
+    <div class="content">
+      <%= yield %>
+    </div>
+    <%= render "shared/footer" %>
+    <!-- WARNING: DO NOT DELETE THE LINE BELOW -->
+    <div id="rails-garden-manager-watermark"></div>
+
 
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
