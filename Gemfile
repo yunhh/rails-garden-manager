@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
-ruby '2.6.3'
+ruby '2.6.5'
 
 gem 'bootsnap', require: false
 # gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
-gem 'puma'
-gem 'rails', '5.2.3'
+gem "puma", ">= 4.3.3"
+gem 'rails', '6.0.2'
 gem 'redis'
 gem 'faker'
 gem 'rest-client'
@@ -16,6 +16,8 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem "nokogiri", ">= 1.10.8"
+gem "rack", ">= 2.0.8"
 
 group :development do
   gem 'web-console', '>= 3.3.0'
